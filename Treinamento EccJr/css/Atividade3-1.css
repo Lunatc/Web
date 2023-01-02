@@ -1,0 +1,22 @@
+.background {
+    /*seleciona elementos HTML cuja class seja "background" */
+    background-color: red;
+    width: 100%;
+    font-size: 15pt;
+    color: blue;
+}
+
+#product-list {
+    /*seleciona o elemento cujo id seja "product-list" */
+}
+
+img, 
+svg {
+
+    /*seleciona todas as tags img e svg */
+}
+
+button[type='submit'] {
+    /*seleciona todos os elementos button cujo atributo type seja "submit"*/
+}
+
