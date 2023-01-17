@@ -7,3 +7,4 @@ Oque estudei/pratiquei até o momento:
 - HTML
 - CSS
 - Flexbox
+- JS
