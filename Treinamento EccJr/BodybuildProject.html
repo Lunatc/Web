@@ -11,7 +11,13 @@
 
     <header>
         <h2>BodyBuilding</h2>
-        <p>Increase your muscle size & strength</p>
+        <!--<p>Increase your muscle size & strength</p>-->
+        <nav>
+            <li><a href="#explaining">Increase 1</a></li>
+            <li><a href="#recent-videos">Videos</a></li>
+            <li><a href="#explaining2">Increase 2</a></li>
+            <li><a href="#quotes">Reviews</a></li>
+        </nav>
     </header>
 
     <section class="hero">
@@ -23,9 +29,9 @@
             <form>
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Address" id="emailField">
-                <input type="number" placeholder="Phone Number" id="phoneNumber">
-                <input type="number" placeholder="Zip Code" id="zipCode">
-                <button id="button" >Sign up</button>
+                <input type="tel" placeholder="Phone Number" id="phoneNumber">
+                <input type="text" placeholder="Zip Code" id="zipCode">
+                <button type='button' id="button" >Sign up</button>
             </form>
         </div>
         
@@ -42,7 +48,7 @@
 
     </section>
 
-    <section class="explaining">
+    <section class="explaining" id="explaining">
         <div class="Imagem">
             <img src="img/img2.jpg" alt="cara maromba">
         </div>
@@ -56,7 +62,7 @@
         </div>
     </section>
 
-    <section class="recent-videos">
+    <section class="recent-videos" id="recent-videos">
         <h2>Recent videos</h2>
         <ul class="grid">
             <li>
@@ -74,7 +80,7 @@
         </ul>
     </section>
 
-    <section class="explaining2">
+    <section class="explaining2" id="explaining2">
         <div class="texto">
             <h2>Increase muscle gain and keep it</h2>
             <br>
@@ -88,7 +94,7 @@
         </div>
     </section>
 
-    <section class="quotes">
+    <section class="quotes" id="quotes">
         <ul class="grid">
             <li>
                 <img src="img/quotes.svg" alt="">
@@ -112,6 +118,7 @@
         <p>Copyright@2023.All rights reserved| Copied and coded by Cíntia</p>
     </footer>
 
+    <script src="js/vanilla-masker.js"></script>
     <script src="js/form-validation.js"></script>
 
 </body>

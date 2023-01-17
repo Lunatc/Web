@@ -3,7 +3,27 @@ const phoneNumber = document.getElementById('phoneNumber')
 const zipCode = document.getElementById('zipCode')
 const button = document.getElementById('button')
 
+document.querySelectorAll('a[href^="#"]').forEach(function (element) {
+    if (!element.hash) return;
+    if (element.origin + element.pathname !== self.location.href) return;
+  
+    (function (destination) {
+        console.log('teste')
+      element.addEventListener(
+        'click',
+        function (event) {
+          window.scrollTo({
+            top: destination.offsetTop,
+            behavior: 'smooth',
+          });
+          event.preventDefault();
+        },
+        false
+      );
+    })(document.querySelector(element.hash));
+});
 
+//VALIDAR FORMS
 button.addEventListener('click', function (){
     const email = emailField.value
     const phone = phoneNumber.value
@@ -17,19 +37,21 @@ button.addEventListener('click', function (){
 
     if(validatePhone(phone)){
         console.log(phone)
+        VMasker(document.querySelector('#phoneNumber')).maskPattern('(99) 99999-9999');
     } else {
         window.alert("Telefone invalido")
     }
 
     if(validateZip(zip)){
         console.log(zip)
+        VMasker(document.querySelector('#zipCode')).maskPattern('99999-999');
     } else {
         window.alert("Código postal inválido")
     }
 
 })
 
-/function validateEmail(email){
+function validateEmail(email){
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase())
 }
@@ -40,6 +62,7 @@ function validatePhone(phone){
 }
 
 function validateZip(zip){
-    const re = /^[0-9]{5}-[0-9]{3}$/
+    const re = /^[0-9]{5}-?[0-9]{3}$/
     return re.test(zip)
 }
+
