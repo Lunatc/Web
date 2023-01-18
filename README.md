@@ -1,10 +1,19 @@
 Repositório para meus estudos de desenvolvimento web.
 
-Treinamento ECCjr de acordo com: https://github.com/eccjr/hello-world
+### Treinamento ECCjr 
+
+Disponível em: https://github.com/eccjr/hello-world
+
+
+### React Crash Course
+
+Disponível em: https://www.youtube.com/watch?v=Dorf8i6lCuk&ab_channel=Academind
+
 
 Oque estudei/pratiquei até o momento:
-- Git
+- Básico de Git
 - HTML
 - CSS
 - Flexbox
 - JS
+
