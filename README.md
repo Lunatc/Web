@@ -17,3 +17,8 @@ Oque estudei/pratiquei até o momento:
 - Flexbox
 - JS
 
+O que estou estudando agora:
+- React
+
+O que quero estudar a seguir:
+- Node.js
